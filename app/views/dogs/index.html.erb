@@ -1,0 +1,12 @@
+<h1>Here are some dogs!</h1>
+
+<div id="dogs">
+  <% @dogs.each do |dog| %>
+    <div class="dog">
+      <h3><%= dog.name %></h3>
+      <h4>Breed: <%= dog.breed %></h4>
+      <h4>Age: <%= dog.age %></h4>
+      <h4>Color: <%= dog.color %></h4>
+    </div>
+  <% end %>
+</div>

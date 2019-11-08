@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SqlDemo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><%= link_to "People", "/", class: current_page?('/') ? "active" : "" %></li>
+          <li><%= link_to "Dogs", "/dogs", class: current_page?('/dogs') ? "active" : "" %></li>
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>

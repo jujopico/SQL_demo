@@ -1,0 +1,11 @@
+<h1>Here are some people!</h1>
+
+<div id="people">
+  <% @people.each do |person| %>
+    <div class="person">
+      <h3><%= person.name %></h3>
+      <h4>Age: <%= person.age %></h4>
+      <h4>Mood: <%= person.mood %></h4>
+    </div>
+  <% end %>
+</div>
